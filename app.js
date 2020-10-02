@@ -39,6 +39,10 @@ app.get('/api', (req, res) => {
     });
 });
 
+app.get("/hello",(req, res, next) => {
+    res.send("hello world ")
+})
+
 // middleware -
 app.use(morgan('dev'));
 app.use(bodyParser.json());
