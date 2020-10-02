@@ -6,6 +6,7 @@ const _ = require('lodash');
 exports.postById = (req, res, next, id) => {
     Post.findById(id)
         .populate('postedBy', '_id name')
+        .populate('comments', 'text created')
         .populate('comments.postedBy', '_id name')
         .populate('postedBy', '_id name role')
         .select('_id title body created likes comments photo')
