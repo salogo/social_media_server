@@ -1,18 +1,25 @@
-# social_media_server
-#Full-Stack: Social media App A user can sign up , sign in, sign out . A user can create, edit, delete a post. A user can like or unlike other people posts and comment. A user can delete his/her profile . A user can also follow others or unfollow.
+ social_media_server
+#
+Full-Stack: Social media App A user can sign up , sign in, sign out . A user can create, edit, delete a post. A user can like or unlike other people posts and comment. A user can delete his/her profile . A user can also follow others or unfollow.
 
-#Built with Javascript, React,CSS, Bootstrap, Node, Express, MongoDB.
+#
+Built with Javascript, React,CSS, Bootstrap, Node, Express, MongoDB.
 
-#Project live :
+#
+Project live :
 
 http://determined-relation.surge.sh/
 
-#Youtub Video: https://youtu.be/HHYsmh-NdKI
+#
+Youtub Video: https://youtu.be/HHYsmh-NdKI
 
-#Code Examples
-#Here is where I created postById() function to handle any post that need post Id to perform any task. I also imported their controllers:
+#
+Code Examples
+#
+Here is where I created postById() function to handle any post that need post Id to perform any task. I also imported their controllers:
 
-# const Post = require('../models/post');
+# 
+const Post = require('../models/post');
 const formidable = require('formidable');
 const fs = require('fs');
 const _ = require('lodash');
@@ -35,9 +42,11 @@ exports.postById = (req, res, next, id) => {
         });
 };
 
-#Here is where I created the routes for all of like unlike, comments, post routes, photos:
+#
+Here is where I created the routes for all of like unlike, comments, post routes, photos:
 
-#const express = require('express');
+#
+const express = require('express');
 const {
     getPosts,
     createPost,
